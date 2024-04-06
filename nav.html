@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <!--icons in the footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Navigation Bar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </button>
+                <div class="dropdown-content">
+                    <li class="li-hidden"><a class="home" href="#">Home</a></li>
+                    <li class="li-hidden"><a href="#">Places</a></li>
+                    <li class="li-hidden"><a href="#">Hotels</a></li>
+                    <li class="li-hidden"><a href="#">Restaurants</a></li>
+                    <li class="li-hidden"><a href="#">Transportation</a></li>
+
+                    <li><a href="#">Egypt</a></li> <!-- Second level menu item with link -->
+                    <li><a href="#">Buy Now!</a></li>
+                    <li><a href="#">registration</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </div>
+            <div class="logo_container">
+                <h1>HI<span id="EGYPT">EGYPT</span></h1>
+            </div>
+
+            <div class="page-total">
+
+                <ul class="ul-page-total" >
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a href="#">Places</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Transportation</a></li>
+                </ul>
+
+            </div>
+            <button class="login-button">Log In</button>
+
+        </nav>
+
+    </header>
+    <div class="all">
+        
+    </div>
+<footer>
+    <div class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>ONE</h4>
+                <hr class="footer-line-col">
+                <ul>
+                    <li><a href="#">there</a></li>
+                    <li><a href="#">there</a></li>
+                    <li><a href="#">there</a></li>
+                    <li><a href="#">there</a></li>
+                </ul></div>
+                <div class="footer-col">
+                    <h4>Two</h4>
+                    <hr class="footer-line-col">
+                    <ul>
+                        <li><a href="#">here</a></li>
+                        <li><a href="#">here</a></li>
+                        <li><a href="#">here</a></li>
+                        <li><a href="#">here</a></li>
+                    </ul></div>
+            <div class="footer-col">
+                <h4>Three</h4>
+                <hr class="footer-line-col">
+                <ul>
+                    <li><a href="#">where</a></li>
+                    <li><a href="#">where</a></li>
+                    <li><a href="#">where</a></li>
+                    <li><a href="#">where</a></li>
+                </ul></div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <hr class="footer-line-col">
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</body>
+<script>
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+</html>
