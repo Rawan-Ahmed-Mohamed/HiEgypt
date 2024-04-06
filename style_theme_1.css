@@ -22,7 +22,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(229, 215, 215);
-   background-image: url(egy.jfif);
+    background-image: url(egy.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    
+    
     
 }
 .all {
@@ -332,9 +336,38 @@ hr.footer-line-col {
 }
 }
 @media(max-width: 574px){
+    /*#footer-col-1{
+        width: 50%;
+    }
+    #footer-col-2{
+        width: 50%;
+    }
+    #footer-col-3{
+        width: 50%;
+    }
+    #footer-col-4{
+        width: 50%;
+    }*/
+    .footer-row{
+        flex-wrap: wrap;
+    }
   .footer-col{
-    width: 100%;
-}
+    width: 20%;
+    }
+    #footer-col-1{
+        padding-left: 70px;
+        }
+    #footer-col-4{
+        
+        display: contents;
+    }
+    #footer-line-col-media{
+        display: none;
+    }
+    #footer-media-title{
+        margin: 10px 20px 10px 70px;
+        
+    }
 }
 
 
