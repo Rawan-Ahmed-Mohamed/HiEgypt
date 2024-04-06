@@ -192,7 +192,7 @@ body {
     background-color: #ffffff; /* Darker background on hover */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .navbar a {
         float: none;
         display: block;
@@ -335,7 +335,7 @@ hr.footer-line-col {
     margin-bottom: 30px;
 }
 }
-@media(max-width: 574px){
+@media(max-width: 767px){
     /*#footer-col-1{
         width: 50%;
     }
@@ -355,7 +355,7 @@ hr.footer-line-col {
     width: 20%;
     }
     #footer-col-1{
-        padding-left: 70px;
+        padding-left: 10%;
         }
     #footer-col-4{
         
