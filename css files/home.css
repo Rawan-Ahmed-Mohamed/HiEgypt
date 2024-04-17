@@ -225,6 +225,37 @@
 }
 
 
+.shopping{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    background-image: url(../images/Sales.jpg);
+  }
+  .shopping p{
+      align-items: center;
+      font-size: 2.5em;
+      color: #000000;
+      font-weight: 600;
+  }
+  
+  .shopping button{
+      padding: 10px 20px;
+      background-color: #2a4851;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 0;
+  }
+  .shopping button:hover{
+      background-color: #062028;
+  } 
+  @media screen and (max-width: 767px) {
+      .shopping{
+          display: none;
+      }
+   }
 /* Statistics */
 /*stat*/
 

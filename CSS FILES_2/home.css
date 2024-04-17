@@ -241,6 +241,37 @@
    
 }
 
+.shopping{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    background-image: url(../image_2/Sales-modified.jpg);
+  }
+  .shopping p{
+      align-items: center;
+      font-size: 2.5em;
+      color: #000000;
+      font-weight: 600;
+  }
+  
+  .shopping button{
+      padding: 10px 20px;
+      background-color: #BC6C25;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+  .shopping button:hover{
+      background-color: #2f421a;
+  } 
+  @media screen and (max-width: 767px) {
+      .shopping{
+          display: none;
+      }
+   }
 
 /* Statistics */
 /*stat*/
@@ -332,7 +363,7 @@ background-color: #1e2021;
 
 .video video {
     width: 100%;
-    height: 70em;
+    height: 50em;
 }
 
 @media screen and (max-width: 767px) {
