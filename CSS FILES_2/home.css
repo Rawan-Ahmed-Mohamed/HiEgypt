@@ -1,7 +1,7 @@
 /* Header background */
 
 .header-bg {
-    background-image: url(../images/first-img-home.jpg);
+    background-image: url(../image_2/first-img-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50em; /* Changed from 750px to 75em */
