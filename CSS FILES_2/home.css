@@ -19,8 +19,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
+background-color: rgba(0, 0, 0, 0.3);
+height: fit-content;
+border-radius: 5%;
 }
 
 .content p {
@@ -48,13 +49,28 @@
     background-color: #BC6C25;
 }
 
+.about-egypt-page {
+    background-color: #283618;
+    border-radius: 2em;
+    height: 3em;
+    width: 12em;
+    color: white;
+    cursor: pointer;
+    font-size: 100%;
+    top: 12em;
+}
+
+.about-egypt-page:hover {
+    background-color: #BC6C25;
+}
+
 
 /* Slideshow with text */
 .slidshow-with-text {
     display: flex;
     height: 45em;
     background-color: #2f421a;
-    margin-left: 240px;
+
     margin-bottom: 25px;
 
     
@@ -182,7 +198,6 @@
     background-color: #DDA15E;
     display: flex;
     height: 45em;
-    margin-left: 240px;
     margin-bottom: 25px;
 
 
@@ -285,7 +300,6 @@ background-color: #1e2021;
     place-items: center;  
     width: 100%;
     height: 350px;
-    margin-left: 110px;
     margin-bottom: 25px;
 
 }
@@ -357,7 +371,6 @@ background-color: #1e2021;
 /* Video */
 .video {
     background-color: #BC6C25;
-    margin-left: 240px;
 
 }
 
@@ -383,7 +396,6 @@ background-color: #1e2021;
     position: relative;
     display: flex;
     height: 35em;
-    margin-left: 240px;
 
 }
 
