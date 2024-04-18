@@ -27,6 +27,7 @@
 }
 
 
+
 /* Home Start Button */
 .home-Start-button {
     background-color: #2a4851;
@@ -41,6 +42,22 @@
 .home-Start-button:hover {
     background-color: #e99815;
 }
+
+.about-egypt-page {
+    background-color: #2a4851;
+    border-radius: 2em;
+    height: 3em;
+    width: 12em;
+    color: white;
+    cursor: pointer;
+    font-size: 100%;
+    top: 12em;
+}
+
+.about-egypt-page:hover {
+    background-color: #e99815;
+}
+
 
 
 /* Slideshow with text */
