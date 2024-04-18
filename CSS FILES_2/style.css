@@ -270,3 +270,10 @@ body {
   
   
 
+  @media screen and (max-width: 720px) {
+    .THE-BODY-CONTENT{
+      margin: 0;
+    }
+   
+  }
+  
