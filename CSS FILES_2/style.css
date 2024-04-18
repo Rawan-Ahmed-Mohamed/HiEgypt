@@ -188,7 +188,7 @@ body {
 .THE-BODY-CONTENT {
 
     position: relative;
-  z-index: 9999;
+  z-index: 999;
   margin-top: 80px; /* Height of the navbar */
   margin-left: 260px; /* Width of the sidebar */
   }
