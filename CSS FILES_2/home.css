@@ -18,7 +18,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-35%, -50%);
 background-color: rgba(0, 0, 0, 0.3);
 height: fit-content;
 border-radius: 5%;
@@ -261,12 +261,16 @@ border-radius: 5%;
     justify-content: center;
     margin-bottom: 60px;
     background-image: url(../images/Sales-modified.jpg);
+    z-index: 1;
+    position: relative;
   }
   .shopping p{
       align-items: center;
       font-size: 2.5em;
       color: #000000;
       font-weight: 600;
+      z-index: 1;
+      position: relative;
   }
   
   .shopping button{
@@ -278,14 +282,20 @@ border-radius: 5%;
       font-size: 16px;
       cursor: pointer;
       margin-bottom: 20px;
+      z-index: 1;
+      position: relative;
   }
   .shopping button:hover{
       background-color: #2f421a;
   } 
   @media screen and (max-width: 767px) {
-      .shopping{
-          display: none;
-      }
+    .shopping p {
+        font-size: 20px;
+    }
+    .shopping button{
+        font-size: 15px;
+        height: 2.5em;
+        }
    }
 
 /* Statistics */

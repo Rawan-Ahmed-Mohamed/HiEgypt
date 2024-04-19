@@ -248,31 +248,43 @@
     justify-content: center;
     margin-bottom: 60px;
     background-image: url(../images/Sales.jpg);
+    z-index: 1;
+    position: relative;
+    
   }
   .shopping p{
       align-items: center;
       font-size: 2.5em;
       color: #000000;
       font-weight: 600;
+      z-index: 1;
+      position: relative;
   }
   
-  .shopping button{
-      padding: 10px 20px;
-      background-color: #2a4851;
-      color: rgb(255, 255, 255);
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-bottom: 0;
-  }
-  .shopping button:hover{
-      background-color: #062028;
-  } 
-  @media screen and (max-width: 767px) {
-      .shopping{
-          display: none;
-      }
+  .shopping button {
+    padding: 10px 20px;
+    background-color: #2a4851;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.shopping button:hover {
+    background-color: #062028;
+}
+@media screen and (max-width: 767px) {
+    .shopping p {
+        font-size: 20px;
+    }
+    .shopping button{
+        font-size: 15px;
+        height: 2.5em;
+        }
    }
 /* Statistics */
 /*stat*/
