@@ -11,6 +11,9 @@ body {
   background-color: #e99815;
   color: white;
 }
+
+/***********************************Content*******************************************/
+
 .background {
     background-image: url('../images/hotel\ info.avif');
     background-size: cover;
