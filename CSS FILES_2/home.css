@@ -104,6 +104,9 @@ border-radius: 5%;
 
 
 @media screen and (max-width: 767px) {
+    .THE-BODY-CONTENT{
+        margin-right: 0;
+    }
     .slidshow-with-text {
         flex-direction: column-reverse;
         
