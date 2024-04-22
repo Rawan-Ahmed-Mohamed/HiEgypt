@@ -7,7 +7,10 @@
 body {
     margin: 0; 
 }
-
+#hotels{
+  background-color: #e99815;
+  color: white;
+}
  /*************************************************** Header **********************************************************/
  
  header {
@@ -267,7 +270,7 @@ header.scrolled{
     position: relative;
     margin: 0;
     width: 100%;
-    z-index: 1; 
+    z-index: -1; 
     min-height: 100vh;
 }
 
