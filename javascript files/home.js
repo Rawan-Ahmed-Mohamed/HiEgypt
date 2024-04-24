@@ -25,6 +25,30 @@ function showSlides(n) {
 
 
 
+//to top button
+document.addEventListener('DOMContentLoaded', function() {
+  const ToTopButton = document.getElementById('ToTopBtn');
+
+  if (ToTopButton) {
+      window.addEventListener('scroll', function() {
+          if (window.scrollY > 300) { 
+              ToTopButton.style.display = 'block';
+          } else {
+              ToTopButton.style.display = 'none';
+          }
+      });
+
+      ToTopButton.addEventListener('click', function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  } 
+});
+
+
+
 
 
 

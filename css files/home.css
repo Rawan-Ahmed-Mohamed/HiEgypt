@@ -483,3 +483,17 @@ height: auto;
 
     }
 }
+
+#ToTopBtn {
+    background-color: #2a4851;
+ color: #fff;
+ border-radius: 5em;
+ padding: 1em 2em;
+ cursor: pointer;
+ margin: 0 auto;
+ display: block;
+}
+
+#ToTopBtn:hover {
+ background-color: #e99815;
+}
