@@ -83,7 +83,7 @@
     color: rgb(32, 13, 13);
     font-size: larger;
     padding: 2em;
-    background-color: rgba(255, 183, 0, 0.8);
+    background-color: #e99815;
     width: 47%;
     height: 19em;
     text-align: justify;
@@ -167,7 +167,7 @@
 
 .text {
     color: #000000;
-    background-color: rgba(255, 183, 0, 0.8);
+    background-color: rgba(233, 152, 21, .8);
     font-size: 1em;
     position: absolute;
     bottom: 8px;
@@ -189,7 +189,7 @@
 
 /* Solo image */
 .solo-img {
-    background-color: #e99815;
+    background-color: #2a4851;
     display: flex;
     height: 30em;
     margin: 2em 0; 
@@ -207,7 +207,7 @@
     font-size: larger;
     border: 0.2em solid #221b0a;
     padding: 2em;
-    background-color: rgba(239, 206, 201, 0.4);
+    background-color:  #e99815;
     width: 50%;
     text-align: justify;
     overflow-y: scroll;
