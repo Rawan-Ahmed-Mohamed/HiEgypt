@@ -102,19 +102,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.check-hotels-btn {
-background-color: #007bff;
-color: #fff;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-}
 
-.check-hotels-btn:hover {
-background-color: #b37718;
-}
 
 .read-more {
   margin-top: 10px;
@@ -131,7 +119,7 @@ background-color: #b37718;
 }
 
 .read-more:hover {
-  background-color: #b37718; 
+  background-color: #BC6C25; 
 }
 
 .white-section {
@@ -166,21 +154,21 @@ background-color: #b37718;
 .text-section h2 {
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 2.2rem; 
-    color: #2a4851;
+    color: #BC6C25;
     margin-top: 0px; 
 }
 
 .text-section h4 {
     font-size: 1.3rem; 
     font-weight: 1;
-    color: #2a4851a4;
+    color: #DDA15E;
     margin-top: 10px; 
 }
 
 .text-section h5 {
     font-size: 1.5rem; 
     font-weight: 100;
-    color: #2a4851;
+    color: #BC6C25;
     font-family: Cedarville Cursive;
     margin-top: 10px; 
 }
@@ -208,7 +196,7 @@ background-color: #b37718;
 .title h1 {
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 40px;
-  color: #2a4851;
+  color: #BC6C25;
   text-align: center;
   margin-top: 50px;
 }
@@ -216,7 +204,7 @@ background-color: #b37718;
 .title p {
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 16px;
-  color: #2a4851a4;
+  color: #e9b983;
   text-align: center;
   margin-top: 10px;
 }
@@ -242,7 +230,7 @@ background-color: #b37718;
 
 .card:hover {
   transform: translateY(-5px);
-  background-color: #e99815;
+  background-color: #BC6C25;
 }
 
 .card:hover h2,
@@ -253,7 +241,7 @@ background-color: #b37718;
 .card .icon {
   font-size: 45px;
   margin-bottom: 25px;
-  color: #2a4851d2;
+  color: #DDA15E;
 }
 
 .card h2 {
