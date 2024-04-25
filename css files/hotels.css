@@ -11,9 +11,6 @@ body {
   background-color: #e99815;
   color: white;
 }
-
-/***********************************Content*******************************************/
-
 .background {
     background-image: url('../images/hotel\ info.avif');
     background-size: cover;
@@ -65,20 +62,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.check-hotels-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.check-hotels-btn:hover {
-  background-color: #b37718;
-}
-
 .read-more {
     margin-top: 10px;
     padding: 5px 15px;
@@ -122,14 +105,14 @@ body {
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 0.8rem; 
     font-weight: 100;
-    color: #878787ae;
+    color: #1e2021;
     margin-top: 20px; 
 }
 
 .text-section h2 {
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 2.2rem;
-    color: #2a4851;
+    color: #1e2021;
     margin-top: 0px; 
 }
 
@@ -143,7 +126,7 @@ body {
 .text-section h5 {
     font-size: 1.5rem; 
     font-weight: 100;
-    color: #2a4851;
+    color: #1e2021;
     font-family: Cedarville Cursive;
     margin-top: 10px; 
 }
@@ -173,7 +156,7 @@ body {
 .title h1 {
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 40px;
-  color: #2a4851;
+  color: #1e2021;
   text-align: center;
   margin-top: 50px;
 }
@@ -199,7 +182,7 @@ body {
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #3f5266;
+  border: 1px solid #1e2021;
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease; 
   color: #222; 
@@ -207,7 +190,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-  background-color: #e99815;
+  background-color: #b37718;
 }
 
 .card:hover h2,
@@ -218,7 +201,7 @@ body {
 .card .icon {
   font-size: 45px;
   margin-bottom: 25px;
-  color: #2a4851d2;
+  color: #1e2021;
 }
 
 .card h2 {
