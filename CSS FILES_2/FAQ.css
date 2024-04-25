@@ -22,7 +22,7 @@
   
  /*************************************************** Content **********************************************************/
  .background {
-    background: #DDA15E;
+    background: #283618;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -231,7 +231,7 @@
  }
  
  .block button {
-     background: linear-gradient(to right, #ff7f00, #ffac51); 
+     background: linear-gradient(to right, #BC6C25, #DDA15E); 
      color: #ffffff; 
      padding: 15px 30px;
      border-radius: 8px;
