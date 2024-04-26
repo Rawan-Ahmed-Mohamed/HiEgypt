@@ -74,7 +74,7 @@
     border-radius: 35px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    z-index: -1;
+    z-index: 1;
 }
 
 
