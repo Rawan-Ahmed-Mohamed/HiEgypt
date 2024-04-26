@@ -190,7 +190,7 @@ body {
     position: relative;
   z-index: 999;
   margin-top: 80px; /* Height of the navbar */
-  margin-left: 260px; /* Width of the sidebar */
+  margin-left: 240px; /* Width of the sidebar */
   }
   
   .footer{
