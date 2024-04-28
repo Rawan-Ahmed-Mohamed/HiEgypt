@@ -36,19 +36,19 @@ window.onload = function() {
       return false; 
   } else {
       if (searchInput.toLowerCase() === 'buffalo'||searchInput.toLowerCase() === 'food') {
-          window.location.href = 'theme 2 res final.htm#buffalo';
+          window.location.href = 'restuarants.htm#buffalo';
           return false; 
       }
       if (searchInput.toLowerCase() === 'Desserts') {
-          window.location.href = 'theme 2 res final.htm#Desserts'; 
+          window.location.href = 'restuarants.htm#Desserts'; 
           return false;
       }
       if (searchInput.toLowerCase() === 'special-dish'||searchInput.toLowerCase()==='special dish') {
-        window.location.href = 'theme 2 res final.htm#special-dish'; 
+        window.location.href = 'restuarants.htm#special-dish'; 
         return false; 
     }
     if(searchInput.toLowerCase() === 'drinks'||searchInput.toLowerCase()==='coffee') {
-      window.location.href = 'theme 2 res final.htm#CAFE'; 
+      window.location.href = 'restuarants.htm#CAFE'; 
       return false; }
       else{
           document.getElementById("searchInput").style = "color:red;";
