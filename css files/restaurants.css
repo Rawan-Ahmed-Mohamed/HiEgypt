@@ -117,9 +117,6 @@ a:hover {
   font-size: larger;
 }
 
-a:visited {
-  color: #1e2021;
-}
 
 /* وسائط الاستجابة */
 @media only screen and (max-width: 768px) {
@@ -174,6 +171,7 @@ a:visited {
   position: relative;
  left: 25%;
  top: 0;
+ font-size: small;
  margin-left: 27%;
 }
 .contact {
@@ -212,7 +210,6 @@ list-style-type: disc;
   width: 77%;
   border: solid #1e2021;
   top:0;
-  font-size: medium;
   left: 0;
   color: black;
   height: 800px;
