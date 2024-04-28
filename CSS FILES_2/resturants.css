@@ -259,6 +259,19 @@ background-color: #dda15e;
     table img {
       padding: 8px;
     }
+      .cover-main h1 , .cover-main h2 {
+  font-size: large;
+}
+
+.searchForm input {
+height: 60px;
+width: 250px;
+margin-left: -20px;
+}
+.searchForm button{
+  width: 50px;
+}
+
   }
   
   @media only screen and (max-width: 480px) {
@@ -270,6 +283,19 @@ background-color: #dda15e;
     table img {
       padding: 6px;
     }
+      .cover-main h1 , .cover-main h2 {
+  font-size: small;
+}
+
+.searchForm input {
+height: 40px;
+width: 200px;
+margin-left: -20px;
+}
+.searchForm button{
+  width: 50px;
+}
+
   }
   
   
