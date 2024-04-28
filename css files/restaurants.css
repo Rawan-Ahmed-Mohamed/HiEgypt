@@ -34,7 +34,7 @@ header{
    }
    .cover-main {
     height: 250px;
-    background-image: url('cover\ res.jpg') ;
+    background-image: url('../images/cover\ res.jpg') ;
     background-size: cover ; /* لتغطية العنصر بالصورة */
     background-position: center; /* لتوسيط الصورة */
     color: white; /* لتغيير لون النص ليظهر بوضوح على الخلفية */
