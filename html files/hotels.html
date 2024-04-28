@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Quicksand:wght@300..700&family=Style+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css files/hotels.css">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-
-    <script src="../javascript files/script.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     <title>Hotels info</title>
 </head>
 <body>
@@ -74,8 +76,8 @@
                     <p>H O T E L E X P E R I E N C E</p>
                     <h2>A UNIQUE EXPERIENCE</h2>
                     <h2>WHERE TO STAY</h2>
-                    <a href="#content1"><button class="read-more">Read More</button></a>
-                </div>
+                    <button id="scrollToContent1" class="read-more">Read More</button>
+                    </div>
             </div>
         </div>
     </div>
@@ -89,8 +91,8 @@
                 </h4>
                 <h5>Enjoy your trip</h5>
             </div>
-            <div class="photo-section">
-                <img src="../images/About us.png">
+            <div class="video-section">
+                <video src="../images/Video hotel.mp4" controls></video>            
             </div>
         </div>
     </section>
@@ -178,7 +180,44 @@
 				</div>
 			</div>
 		</div>
-    
+        <section class="table-section">
+            <div class="table-wrapper">
+                <h2>Unique Features of Egypt Hotels</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Iconic Architecture</td>
+                                <td>Experience the charm of Egypt's rich history and culture with hotels that boast stunning architectural designs inspired by ancient Egyptian civilization.</td>
+                            </tr>
+                            <tr>
+                                <td>Rooftop Dining</td>
+                                <td>Indulge in unforgettable dining experiences with rooftop restaurants offering panoramic views of Egypt's iconic landmarks, creating the perfect backdrop for special occasions.</td>
+                            </tr>
+                            <tr>
+                                <td>Nile River Views</td>
+                                <td>Wake up to breathtaking views of the majestic Nile River from your hotel room or suite, allowing you to immerse yourself in the natural beauty of Egypt right from the comfort of your accommodation.</td>
+                            </tr>
+                            <tr>
+                                <td>Authentic Cultural Experiences</td>
+                                <td>Immerse yourself in Egyptian culture with hotels that offer authentic cultural experiences, such as traditional music performances, cooking classes featuring local cuisine, and guided tours to nearby historical sites.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+          <div class="iframe-container">
+            <div class="iframe-title">Top 10 Hotels in Egypt</div>
+            <iframe src="https://www.tripadvisor.com/Hotels-g294200-Egypt-Hotels.html" frameborder="0" scrolling="auto"></iframe>
+          </div>
+          
         <div class="newsletter-container">
             <h1>Get Latest Updates</h1>
             <a href="https://www.egypttoday.com/Tag/597/tourism" class="button-link" target="_blank">
@@ -237,6 +276,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.read-more').addEventListener('click', function() {
+            document.querySelector('#content1').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
 
