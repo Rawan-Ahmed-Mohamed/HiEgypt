@@ -212,6 +212,7 @@ list-style-type: disc;
   width: 77%;
   border: solid #1e2021;
   top:0;
+  font-size: medium;
   left: 0;
   color: black;
   height: 800px;
@@ -220,6 +221,7 @@ list-style-type: disc;
   position:absolute;
   left: 0;
   top: 0;
+  
   margin: 10px;
   width: 200px;
 }
