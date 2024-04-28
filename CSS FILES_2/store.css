@@ -249,3 +249,112 @@
     font-size: 20px; 
     line-height: 20px; 
 }
+
+.buy-form {
+  display: none;
+  width: 500px; 
+  padding: 20px; 
+  border-radius: 10px;
+  position: fixed;
+  top: 100px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.buy-form h2 {
+  margin-bottom: 15px; 
+  text-align: center;
+  color: #333;
+}
+
+.buy-form input[type="text"],
+.buy-form input[type="tel"],
+.buy-form input[type="email"],
+.buy-form button,
+.buy-form select,
+.buy-form input[type="number"] {
+  width: 100%;
+  padding: 8px; 
+  margin-bottom: 10px; 
+  border: 1px solid #000; 
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.buy-form input[type="text"],
+.buy-form input[type="tel"],
+.buy-form input[type="email"],
+.buy-form input[type="number"]::placeholder {
+  color: #999; 
+}
+
+.buy-form button {
+  background-color:#BC6C25;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-form button:hover {
+  background-color:#bc6b25b0;
+}
+
+.buy-form .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  font-size: 18px;
+  color: #999;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1; 
+}
+
+.buy-form .close-btn:hover {
+  transform: scale(0.8); 
+  color: #666;
+}
+
+.date-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-inputs select {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.buy-form input[type="text"],
+.buy-form input[type="tel"],
+.buy-form input[type="email"],
+.buy-form input[type="number"] {
+  color: #000; 
+}
+
+
+
+
+.date-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-inputs select {
+  flex: 1;
+  margin-right: 5px;
+}
+.buy-form input[type="text"],
+.buy-form input[type="tel"],
+.buy-form input[type="email"],
+.buy-form input[type="number"] {
+  
+  color: #000; 
+}
