@@ -4,7 +4,7 @@
 }
 body{
 
- background-image: url(../Images/metro.jpg);
+ background-image: url(../images/metro.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position:center ;
@@ -55,7 +55,7 @@ background-attachment: fixed;
     font-weight: bold;
     
     }
-    .Bus{
+    #Bus{
 
         background-color: rgb(42, 72, 81,0.8);
         margin-left: 50px;
