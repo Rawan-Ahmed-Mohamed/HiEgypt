@@ -48,6 +48,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.backgroundColor = "yellow";
+  } else {
+    document.body.style.backgroundColor = "pink";
+  }
+}
+
+// Create a MediaQueryList object
+var x = window.matchMedia("(max-width: 700px)")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});
+
+
 
 
 
