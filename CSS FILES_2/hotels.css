@@ -453,17 +453,16 @@ object-fit: cover;
 .container {
     flex: 1;
 }
-
 .table-section {
   margin-top: 30px;
   padding: 50px 0;
-  background-color: #e0a969; 
-  color: #fff; 
-  font-family: 'Poppins', sans-serif; 
+  background-color: #e0a969;
+  color: #333; 
+  font-family: 'Poppins', sans-serif;
 }
 
 .table-wrapper {
-  max-width: 90%; 
+  max-width: 90%;
   margin: 0 auto;
   overflow-x: auto;
 }
@@ -471,35 +470,39 @@ object-fit: cover;
 table {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 10px; 
-  overflow: hidden; 
-  box-shadow: 0 0 20px rgba(245, 200, 0, 0.329); 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(245, 200, 0, 0.329);
   margin-top: 30px;
 }
+
 .table-section h2 {
-  text-align: center; 
+  text-align: center;
+  color: #333; 
 }
 
 table th,
 table td {
   padding: 15px;
   text-align: left;
-  border-bottom: 1px solid #9c9b5d; 
-  color: #ffffff; 
+  border-bottom: 1px solid #9c9b5d;
+  color: #333; 
 }
 
 table th {
-  background-color: #e9a65a; 
-  font-weight: bold; 
+  background-color: #e9a65a;
+  font-weight: bold;
+  color: #333; 
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #f3bc7e; 
+  background-color: #f3bc7e;
 }
 
 table tbody tr:hover {
-  background-color: #cc9b64; 
+  background-color: #cc9b64;
 }
+
 .iframe-container {
   position: relative;
   width: 100%;
