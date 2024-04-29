@@ -50,7 +50,7 @@
     display:flex;
     justify-content: space-around;
   }
-  button{
+  .button{
   font-weight:bold;
   margin: 10px;
   width: 120px;
@@ -61,7 +61,7 @@
     transition-duration: .4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
-  button:hover{
+  .button:hover{
   background-color: #bc6c25;
   color: #fff;
   transform: scale(1.2);
