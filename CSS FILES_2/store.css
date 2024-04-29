@@ -252,20 +252,23 @@
 
 .buy-form {
   display: none;
-  width: 500px; 
-  padding: 20px; 
+  width: 500px;
+  padding: 20px;
   border-radius: 10px;
   position: fixed;
-  top: 100px; 
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 9999;
+  resize: both; 
+  overflow: auto; 
+  max-height: 80%; 
 }
 
 .buy-form h2 {
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   text-align: center;
   color: #333;
 }
@@ -276,10 +279,10 @@
 .buy-form button,
 .buy-form select,
 .buy-form input[type="number"] {
-  width: 100%;
-  padding: 8px; 
-  margin-bottom: 10px; 
-  border: 1px solid #000; 
+  width: calc(100% - 16px); 
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -288,11 +291,11 @@
 .buy-form input[type="tel"],
 .buy-form input[type="email"],
 .buy-form input[type="number"]::placeholder {
-  color: #999; 
+  color: #999;
 }
 
 .buy-form button {
-  background-color:#BC6C25;
+  background-color: #BC6C25;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -300,7 +303,7 @@
 }
 
 .buy-form button:hover {
-  background-color:#bc6b25b0;
+  background-color: #bc6b25b0;
 }
 
 .buy-form .close-btn {
@@ -314,11 +317,11 @@
   background: none;
   cursor: pointer;
   transition: transform 0.3s ease;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .buy-form .close-btn:hover {
-  transform: scale(0.8); 
+  transform: scale(0.8);
   color: #666;
 }
 
@@ -336,68 +339,8 @@
 .buy-form input[type="tel"],
 .buy-form input[type="email"],
 .buy-form input[type="number"] {
-  color: #000; 
+  color: #000;
 }
 
 
 
-
-.date-inputs {
-  display: flex;
-  justify-content: space-between;
-}
-
-.date-inputs select {
-  flex: 1;
-  margin-right: 5px;
-}
-.buy-form input[type="text"],
-.buy-form input[type="tel"],
-.buy-form input[type="email"],
-.buy-form input[type="number"] {
-  
-  color: #000; 
-}
-
-/* Adjustments for smaller laptops */
-@media screen and (max-width: 1366px) {
-  .buy-form {
-    width: 400px;
-    top: 50px; /* Adjust the top position as needed */
-  }
-}
-
-/* Additional adjustments for even smaller screens */
-@media screen and (max-width: 1280px) {
-  .buy-form {
-    width: 350px;
-    top: 30px; /* Adjust the top position as needed */
-  }
-}
-
-/* Further adjustments for very small screens */
-@media screen and (max-width: 1024px) {
-  .buy-form {
-    width: 300px;
-    top: 20px; /* Adjust the top position as needed */
-  }
-}
-
-/* Adjustments for mobile devices */
-@media screen and (max-width: 768px) {
-  .buy-form {
-    width: 90%;
-    padding: 15px; /* Adjust padding for smaller screens */
-    top: 10px; /* Adjust the top position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-/* Adjustments for smaller mobile devices */
-@media screen and (max-width: 480px) {
-  .buy-form {
-    width: 95%;
-    top: 5px; /* Adjust the top position as needed */
-  }
-}
