@@ -1,3 +1,12 @@
+/*------------------Edits-----------------*/
+           
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 .navbar {
     position: fixed;
     top: 0;
@@ -12,12 +21,12 @@
     box-shadow: 0 2px 4px rgb(255, 255, 255); 
   }
 
- 
-:root {
-	--transition: 0.25s ease-in-out;
-
+  .THE-BODY-CONTENT {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    margin-left: 20px;
 }
-
 
 * {
 	font-family: sans-serif;
@@ -25,11 +34,14 @@
     margin: 0;
 }
 
+/*------------------Content-----------------*/
+
 main {
     
     width: 100%;
     background: white;
-    font-family: sans-serif;
+    width: 100%;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 .container {
@@ -42,16 +54,17 @@ main {
 	font-family: 'Noto Sans SC', sans-serif;
 	border-radius: 20px;
 	padding: 8px 18px;
-	border: 2px solid transparent;
+	border:  2px solid transparent;
 }
 
 .btn-primary {
-	background: #BC6C25;
+	background: #646cd6;
 	border-color: 646cd6;
 }
 		  
 .btn-primary:is(:hover, :focus) {
-	background: #DDA15E;
+	background: hsl(214, 72%, 33%);
+	border-color: hsl(214, 72%, 33%);
 }
 		   
 .btn-secondary:is(:hover, :focus) { background: hsla(0, 5%, 55%, 0.6); }
@@ -59,7 +72,6 @@ main {
 .h1,
 .h2,
 .h3 {
-	font-weight: var(--fw-800);
 	text-transform: uppercase;
 }
 		  
@@ -67,53 +79,39 @@ main {
 	color: hsl(0, 0%, 100%);
 	font-size: vcalc(20px + 3.5vw);
 }
-		  
-		  .h2,
-		  .h3 { 
-			color: hsl(206, 34%, 20%); 
-		}
-		  
-		  .h2 { font-size: calc(18px + 1.6vw); }
-		  
-		  .h3 {
-			font-size: calc(16px + 0.45vw);
-			font-weight: 700;
-		  }
-		  
-		  .section-subtitle {
-			color: var(--bright-navy-blue);
-			font-size: 14px;
-			text-transform: uppercase;
-			font-family: 'Noto Sans SC', sans-serif;;
-			margin-bottom: 8px;
-		  }
-		  
-		  .section-title { margin-bottom: 15px; }
-		  
-		  .section-text {
-			color: hsl(225, 8%, 42%);
-			margin-bottom: 30px;
-		  }
-		  
-		  .card-text {
-			color: hsl(225, 8%, 42%);
-			font-size: 14px;
-		  }
-		  
-					
-		*{
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-		}
-		
-		main{
-			width: 100%;
-			background: white;
-			font-family: 'Noto Sans SC', sans-serif;
-		}
-		
 
+.h2,
+.h3 { 
+color: hsl(206, 34%, 20%); 
+}
+
+.h2 { font-size: calc(18px + 1.6vw); }
+
+.h3 {
+font-size: calc(16px + 0.45vw);
+font-weight: 700;
+}
+
+.section-subtitle {
+font-size: 14px;
+text-transform: uppercase;
+font-family: 'Noto Sans SC', sans-serif;;
+margin-bottom: 8px;
+}
+
+.section-title { margin-bottom: 15px; }
+
+.section-text {
+color: hsl(225, 8%, 42%);
+margin-bottom: 30px;
+}
+
+.card-text {
+color: hsl(225, 8%, 42%);
+font-size: 14px;
+}
+    
+ 
 .hero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,8 +129,8 @@ main {
 
 .hero picture {
     position: relative;
-    width: 75%; /* Adjust the width as needed */
-    height: 75%; /* Adjust the height as needed */
+    width: 75%; 
+    height: 75%; 
     border-radius: 0; 
     overflow: hidden;
 }
@@ -163,18 +161,18 @@ main {
 .hero-title {
     font-family: "Zilla Slab", serif;
 	font-weight: 300;    
-	font-size: 68px; /* Increase font size for emphasis */
-    color: #ffffff; /* Set text color to white for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
-    animation: fadeIn 1s ease; /* Apply a fade-in animation */
+	font-size: 68px; 
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    animation: fadeIn 1s ease; 
 }
+
 .hero-text {
     font-size: 24px !important; 
     margin-bottom: 40px;
 	color: #ffffff;
 }
-
-		  
+ 
 .btn-group {
 	display: flex;
 	flex-wrap: wrap;
@@ -183,16 +181,12 @@ main {
 	gap: 10px;
 }
 
-
-
 .dropbtn .menu {
     width: 35px;
     height: 5px;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;
   }
-
-
 
 header {
     width: 100%;
@@ -249,138 +243,135 @@ header ul li.active a {
 }
 .product-field {
     padding: 40px 20px;
-    margin: 0 auto; /* Add auto margins to center horizontally */
+    margin: 0 auto; 
     margin-left: 250px;
 }
 
 .product-field ul {
-    width: calc(100% - 40px); /* Adjusted width to account for padding */
+    width: calc(100% - 40px); 
     display: flex;
     flex-wrap: wrap;
 }
 
 .product-field ul li {
     list-style: none;
-    width: calc(23.4% - 10px); /* Adjusted width to account for padding */
+    width: calc(23.4% - 10px); 
     height: 400px;
     transition: 0.5s all;
     background: whitesmoke;
     border-radius: 20px;
     position: relative;
-    margin-right: 20px; /* Add margin to shift each item to the right */
-}
+    margin-right: 20px; 
 
 .product-field ul li:last-child {
-    margin-right: 0; /* Remove margin from the last item to avoid extra space */
+    margin-right: 0; 
 }
 
 
 picture {
     background: #eee;
     padding: 5px;
-    position: relative; /* Change position to relative */
-    width: 110%; /* Adjusted width */
-    height: 85%; /* Adjusted height */
+    position: relative; 
+    width: 110%; 
+    height: 85%; 
     border-radius: 0px;
     overflow: hidden;
     box-shadow: 0px 1px 0px #00000020, -1px 0px 0px #ccc;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 picture img {
-    width: 100%; /* Adjusted width */
-    height: 100%; /* Adjusted height */
-    object-fit: cover; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Add transition effect */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
 }
 
 picture:hover img {
-    transform: scale(1.1); /* Increase scale on hover */
+    transform: scale(1.1); 
 }
 
 .detail {
     position: absolute;
     bottom: 10px;
-    left: 0; /* Adjusted left position */
-    width: calc(110% - 20px); /* Adjusted width to match the picture width */
+    left: 0; 
+    width: calc(110% - 20px); 
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    border-radius: 5px; /* Adjust this property to change the shape */
+    border-radius: 5px; 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     display: none;
 }
 
 
 picture:hover + .detail {
-    display: block; /* Show detail on hover */
+    display: block; 
 }
 
 
-
-		.detail .icon{
-			width: 30%;
-		    height: 55%;
-		    padding: 20px 5px;
-		}
-		.icon span{
-			background: #00000030;
-		    display: inline-block;
-		    width: 50px;
-		    height: 50px;
-		    line-height: 50px;
-		    text-align: center;
-		    padding: 0;
-		    border-radius: 50%;
-		    margin: 0 0 20px 5px;
-		    font-size: 20px;
-		    color: white;
-		}
-		.icon span:hover{
-			background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
-			cursor: pointer;
-		}
-		.detail > strong{
-			display: inherit;
-			margin: 20px;
-			font-size: 30px;
-			letter-spacing: 2px;
-			color: #555;
-		}
-		.detail > span{
-			display: inherit;
-			font-family: 'Noto Sans SC', sans-serif;
-			font-size: 26;
-			padding: 0 20px;
-    		width: 80%;
-		}
-		.detail small{
-			display: inline-block;
-		    padding: 8px 20px;
-		    margin: 15px;
-		    font-weight: bold;
-		    border-radius: 6px;
-		    cursor: pointer;
-		}
-		.detail small:hover{
-			    background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
-			    color: white;
-			    border-color: cyan;
-		}
-		li h4{
-		    position: absolute;
-            left: 70%;
-		    font-size: 30px;
-		    color: #050505;
-		}
-		/* Add your styles here */
+.detail .icon{
+    width: 30%;
+    height: 55%;
+    padding: 20px 5px;
+}
+.icon span{
+    background: #00000030;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    margin: 0 0 20px 5px;
+    font-size: 20px;
+    color: white;
+}
+.icon span:hover{
+    background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
+    cursor: pointer;
+}
+.detail > strong{
+    display: inherit;
+    margin: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #555;
+}
+.detail > span{
+    display: inherit;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 26;
+    padding: 0 20px;
+    width: 80%;
+}
+.detail small{
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.detail small:hover{
+        background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
+        color: white;
+        border-color: cyan;
+}
+li h4{
+    position: absolute;
+    left: 70%;
+    font-size: 30px;
+    color: #050505;
+}
 
 .items li {
     position: relative;
 }
 header#header h2 {
-    margin-left: 20px; /* Adjust the value as needed */
+    margin-left: 20px; 
 }
 
 .items li .detail {
@@ -400,17 +391,7 @@ header#header h2 {
 }
 
 
-.THE-BODY-CONTENT {
-    position: relative;
-    z-index: 1;
-    margin-top: 40px;
-    margin-left: 20px; /* Adjust the left margin */
-}
-
 .footer{
     margin-left: 120px;
 }
-
-.THE-BODY-CONTENT{
-    margin-left: 0;
 }
