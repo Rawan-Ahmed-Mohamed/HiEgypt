@@ -210,6 +210,8 @@ body {
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
+    margin-left: 240px; /* Width of the sidebar */
+
     }
     
     .footer .row{
