@@ -234,9 +234,8 @@
         <div class="buy-form" id="buyForm">
             <button class="close-btn" onclick="closeForm()">×</button>
             <h2>Order Details</h2>
-            <form id="orderForm" onsubmit="return validateForm()" action="https://api.web3forms.com/submit" method="POST">
+            <form id="orderForm" onsubmit="return validateForm()" >
 
-                <input type="hidden" name="access_key" value="3f457680-d7d3-47c9-8191-3975b81ae5c0">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" placeholder="Rahma" required>
                 

@@ -67,3 +67,46 @@ function scrollToLatestProducts() {
         return false; 
     }
 }
+
+function validateForm() {
+    var firstName = document.getElementById("firstName").value.trim();
+    var lastName = document.getElementById("lastName").value.trim();
+    var address = document.getElementById("address").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var paymentMethod = document.getElementById("paymentMethod").value;
+
+    if (firstName === "" || lastName === "" || address === "" || phone === "" || email === "" || paymentMethod === "") {
+        alert("Please fill in all fields.");
+        return false; 
+    }
+
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false; 
+    }
+
+    var phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false; 
+    }
+
+    var orderDetails = {
+        firstName: firstName,
+        lastName: lastName,
+        address: address,
+        phone: phone,
+        email: email,
+        paymentMethod: paymentMethod
+    };
+
+    localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+
+    alert("Order submitted successfully!");
+    
+    document.getElementById("orderForm").reset();
+
+    return true;
+}
