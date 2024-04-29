@@ -13,15 +13,11 @@ function scrollToLatestProducts() {
         const cards = document.querySelectorAll('.card');
     
         searchInput.addEventListener('input', function () {
-            const searchText = searchInput.value.toLowerCase();
+            const searchText = searchInput.value.toLowerCase().trim(); 
     
             cards.forEach(card => {
-                const desc = card.querySelector('.desc').textContent.toLowerCase();
-                if (searchText === "accessories" && desc.includes("accessories")) {
-                    card.classList.add('highlight');
-                } else if (searchText === "clothes" && desc.includes("clothes")) {
-                    card.classList.add('highlight');
-                } else if (searchText === "statue" && desc.includes("statue")) {
+                const desc = card.querySelector('.desc').textContent.toLowerCase().trim(); 
+                if (searchText && desc.includes(searchText)) { 
                     card.classList.add('highlight');
                 } else {
                     card.classList.remove('highlight');
