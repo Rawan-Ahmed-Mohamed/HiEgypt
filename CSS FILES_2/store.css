@@ -358,3 +358,46 @@
   
   color: #000; 
 }
+
+/* Adjustments for smaller laptops */
+@media screen and (max-width: 1366px) {
+  .buy-form {
+    width: 400px;
+    top: 50px; /* Adjust the top position as needed */
+  }
+}
+
+/* Additional adjustments for even smaller screens */
+@media screen and (max-width: 1280px) {
+  .buy-form {
+    width: 350px;
+    top: 30px; /* Adjust the top position as needed */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 1024px) {
+  .buy-form {
+    width: 300px;
+    top: 20px; /* Adjust the top position as needed */
+  }
+}
+
+/* Adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+  .buy-form {
+    width: 90%;
+    padding: 15px; /* Adjust padding for smaller screens */
+    top: 10px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Adjustments for smaller mobile devices */
+@media screen and (max-width: 480px) {
+  .buy-form {
+    width: 95%;
+    top: 5px; /* Adjust the top position as needed */
+  }
+}
