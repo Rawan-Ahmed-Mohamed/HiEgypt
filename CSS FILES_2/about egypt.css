@@ -19,8 +19,8 @@ h2 {
     margin-top: 30px;
 }
 h3 {
-    color: #cdcdcd;
-    background-color: #283618;
+    color: #333;
+    background-color: #DDA15E;
     padding: 8px;
     border-radius: 5px;
     margin-top: 20px;
@@ -74,7 +74,6 @@ nav ul li a:hover {
 
 
 
- /* Back to Home button styles */
  .back-to-home {
     position: fixed;
     bottom: 20px;
@@ -92,3 +91,65 @@ nav ul li a:hover {
 .back-to-home a:hover {
     background-color: rgb(79, 52, 7);
 }
+
+
+ .back-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.back-to-home a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #e99815;
+    transition: background-color 0.3s ease;
+}
+.back-to-home a:hover {
+    background-color: #8d5e13;
+}
+
+
+
+
+
+#places-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-row th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #BC6C25;
+}
+
+.ancient-egypt,
+.islamic-egypt,
+.modern-egypt {
+    background-color: #f9f9f9;
+}
+
+.ancient-egypt td,
+.islamic-egypt td,
+.modern-egypt td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #283618;
+}
+
+
+
+
+iframe {
+border-radius: 3%;
+}
+@media screen and (max-width: 767px) {
+    iframe{
+        height: 20em;
+        width: 100%;
+    }}
