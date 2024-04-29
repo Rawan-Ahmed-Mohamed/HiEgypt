@@ -1,10 +1,80 @@
-<form action="#" method="post" id="registrationForm">
-    <h2>Register</h2><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../images/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+    .title1{
+        margin-top: 10px;
+        float: left;
+        margin-left: 80px;
+        font-size: 30px;
+        color: #f6eec9;
+        font-weight: bold;
+        }
+        
+
+        .links{
+            float:right;
+        }
+
+        .links li{
+            list-style: none;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 30px;
+            font: normal bold 25px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            .links li a{
+                text-decoration: none;
+                color: #f6eec9;}
+
+
+
+
+
+
+
+form {
+    max-width: 500px;
+    height: 250px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(246, 238, 201, 0.8);
     
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="8" required>
-    
-    <input type="submit" value="Register" id="registerButton">
-</form>
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #fe8761;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold  ;
+}
+
+input[type="submit"]:hover {
+    background-color: #f36434;
+}
+
