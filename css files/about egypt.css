@@ -73,12 +73,10 @@ nav ul li a:hover {
 
 
 
- /* Back to Home button styles */
  .back-to-home {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 999; /* Ensure it appears above other content */
 }
 .back-to-home a {
     text-decoration: none;
@@ -91,3 +89,44 @@ nav ul li a:hover {
 .back-to-home a:hover {
     background-color: #8d5e13;
 }
+
+
+
+
+
+#places-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-row th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #e99815;
+}
+
+.ancient-egypt,
+.islamic-egypt,
+.modern-egypt {
+    background-color: #f9f9f9;
+}
+
+.ancient-egypt td,
+.islamic-egypt td,
+.modern-egypt td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #2a4851;
+}
+
+iframe {
+    border-radius: 3%;
+    }
+    @media screen and (max-width: 767px) {
+        iframe{
+            height: 20em;
+            width: 100%;
+        }}

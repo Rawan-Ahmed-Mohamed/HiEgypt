@@ -1,5 +1,4 @@
-
-
+/*Edits*/
 * {
 	font-family: sans-serif;
     padding: 0;
@@ -10,17 +9,15 @@
 
 main {
 	width: 100%;
-    margin-top: 0px; /* Adjust as needed based on the header height */
+    margin-top: 0px; 
 	background: white;
 	font-family: 'Noto Sans SC', sans-serif;
 }
 
-/* Style the navigation links */
 .main-header a {
-    color: black; /* Change color as needed */
+    color: black; 
     text-decoration: none;
 }
-
 
 .main-header {
     height: 5em;
@@ -40,8 +37,6 @@ main {
     height: 80px; 
 }
 
-
-
 .navbar a {
     float: right;
     display: block;
@@ -51,31 +46,29 @@ main {
     transition: color 0.3s; 
 }
 
-
-
 .container {
     padding-inline: 15px;
-    max-width: 100%; /* Ensure the container doesn't extend beyond viewport width */
+    max-width: 100%; 
 
 }
-
+/*******************************content************************/
 .btn {
 	color: hsl(0, 0%, 100%);
 	text-transform: uppercase;
 	font-family: 'Noto Sans SC', sans-serif;
 	border-radius: 20px;
-	padding: var(--padding, 8px 18px);
-	border: var(--border-width, 2px) solid transparent;
-	transition: var(--transition);
+	padding:  8px 18px;
+	border:  2px solid transparent;
 }
 
 .btn-primary {
-	background: #2a4851;
+	background: #646cd6;
 	border-color: 646cd6;
 }
 		  
 .btn-primary:is(:hover, :focus) {
-	background: #586b70;
+	background: hsl(214, 72%, 33%);
+	border-color: hsl(214, 72%, 33%);
 }
 		   
 .btn-secondary:is(:hover, :focus) { background: hsla(0, 5%, 55%, 0.6); }
@@ -83,7 +76,7 @@ main {
 .h1,
 .h2,
 .h3 {
-	font-weight: var(--fw-800);
+	font-weight: 800;
 	text-transform: uppercase;
 }
 		  
@@ -91,43 +84,43 @@ main {
 	color: hsl(0, 0%, 100%);
 	font-size: vcalc(20px + 3.5vw);
 }
-		  
-		  .h2,
-		  .h3 { 
-			color: hsl(206, 34%, 20%); 
-		}
-		  
-		  .h2 { font-size: calc(18px + 1.6vw); }
-		  
-		  .h3 {
-			font-size: calc(16px + 0.45vw);
-			font-weight: 700;
-		  }
-		  
-		  .section-subtitle {
-			color: var(--bright-navy-blue);
-			font-size: 14px;
-			text-transform: uppercase;
-			font-family: 'Noto Sans SC', sans-serif;;
-			margin-bottom: 8px;
-		  }
-		  
-		  .section-title { margin-bottom: 15px; }
-		  
-		  .section-text {
-			color: hsl(225, 8%, 42%);
-			margin-bottom: 30px;
-		  }
-		  
-		  .card-text {
-			color: hsl(225, 8%, 42%);
-			font-size: 14px;
-		  }
-		  
-		
+
+.h2,
+.h3 { 
+    color: hsl(206, 34%, 20%); 
+}
+
+.h2 { 
+    font-size: calc(18px + 1.6vw); 
+}
+
+.h3 {
+font-size: calc(16px + 0.45vw);
+font-weight: 700;
+}
+
+.section-subtitle {
+font-size: 14px;
+text-transform: uppercase;
+font-family: 'Noto Sans SC', sans-serif;;
+margin-bottom: 8px;
+}
+
+.section-title { margin-bottom: 15px; }
+
+.section-text {
+color: hsl(225, 8%, 42%);
+margin-bottom: 30px;
+}
+
+.card-text {
+color: hsl(225, 8%, 42%);
+font-size: 14px;
+}
+
 
 .hero {
-    margin-top: 0px; /* Adjust the value as needed */
+    margin-top: 0px; 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -136,7 +129,7 @@ main {
     display: grid;
     place-items: center;
     margin: 0;
-    min-height: calc(100vh - 60px); /* Adjust 60px to match the height of your header */
+    min-height: calc(100vh - 60px); 
     text-align: center;
     position: relative; 
 }
@@ -148,7 +141,7 @@ main {
     width: 100%;
     z-index: 1; 
     min-height: 100vh;
-    margin: 0; /* Force margin to be 0 */
+    margin: 0; 
 }
 
 .hero picture img {
@@ -179,18 +172,18 @@ main {
 .hero-title {
     font-family: "Zilla Slab", serif;
 	font-weight: 300;    
-	font-size: 68px; /* Increase font size for emphasis */
-    color: #ffffff; /* Set text color to white for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
-    animation: fadeIn 1s ease; /* Apply a fade-in animation */
+	font-size: 68px; 
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease;
 }
+
 .hero-text {
     font-size: 24px !important; 
     margin-bottom: 40px;
 	color: #ffffff;
 }
-
-		  
+	  
 .btn-group {
 	display: flex;
 	flex-wrap: wrap;
@@ -198,7 +191,6 @@ main {
 	align-items: center;
 	gap: 10px;
 }
-
 
 .logo {
     margin-right: 10px; 
@@ -208,9 +200,7 @@ main {
     height: 100%;
     display: table;
     float: left;
-    margin-left: auto; /* Push the logo container to the left */
-
-
+    margin-left: auto; 
 }
 
 .logo_container h1{
@@ -368,8 +358,6 @@ main {
     background-color: rgb(255, 255, 255);
     margin: 4px 5px;
 }
-      
-
 
 .ul-page-total{
     display: none;
@@ -382,8 +370,7 @@ main {
     padding: 0;
 }
 }#secondary-header {
-    /* Add padding to create space between navigation bar and content */
-    padding-top: 100px; /* Adjust the value as needed */
+    padding-top: 100px; 
     width: 100%;
     height: 100px;
     border-bottom: 2px solid #e5e5e5;
@@ -447,8 +434,8 @@ main {
 
 .product-field ul li {
     list-style: none;
-    width: 100%; /* Change width to 100% for responsiveness */
-    height: auto; /* Change height to auto to allow products to stack */
+    width: 100%; 
+    height: auto;
     transition: 0.5s all;
     background: whitesmoke;
     border-radius: 20px;
@@ -459,34 +446,34 @@ main {
 
 @media screen and (min-width: 768px) {
     .product-field ul li {
-        width: 23.4%; /* Reset width for larger screens */
-        height: 400px; /* Reset height for larger screens */
+        width: 23.4%;
+        height: 400px; 
     }
 }
 
 picture {
     background: #eee;
     padding: 5px;
-    position: relative; /* Change position to relative */
-    width: 85%; /* Adjusted width */
-    height: 85%; /* Adjusted height */
+    position: relative; 
+    width: 85%; 
+    height: 85%; 
     border-radius: 0px;
     overflow: hidden;
     box-shadow: 0px 1px 0px #00000020, -1px 0px 0px #ccc;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 picture img {
-    width: 100%; /* Adjusted width */
-    height: 100%; /* Adjusted height */
-    object-fit: cover; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Add transition effect */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
 }
 
 picture:hover img {
-    transform: scale(1.1); /* Increase scale on hover */
+    transform: scale(1.1); 
 }
 
 .detail {
@@ -496,81 +483,80 @@ picture:hover img {
     right: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    border-radius: 5px; /* Adjust this property to change the shape */
+    border-radius: 5px; 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     display: none;
 }
 
 picture:hover + .detail {
-    display: block; /* Show detail on hover */
+    display: block; 
 }
 
 
 
-		.detail .icon{
-			width: 30%;
-		    height: 55%;
-		    padding: 20px 5px;
-		}
-		.icon span{
-			background: #00000030;
-		    display: inline-block;
-		    width: 50px;
-		    height: 50px;
-		    line-height: 50px;
-		    text-align: center;
-		    padding: 0;
-		    border-radius: 50%;
-		    margin: 0 0 20px 5px;
-		    font-size: 20px;
-		    color: white;
-		}
-		.icon span:hover{
-			background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
-			cursor: pointer;
-		}
-		.detail > strong{
-			display: inherit;
-			margin: 20px;
-			font-size: 30px;
-			letter-spacing: 2px;
-			color: #555;
-		}
-		.detail > span{
-			display: inherit;
-			font-family: 'Noto Sans SC', sans-serif;
-			font-size: 26;
-			padding: 0 20px;
-    		width: 80%;
-		}
-		.detail small{
-			display: inline-block;
-		    padding: 8px 20px;
-		    margin: 15px;
-		    font-weight: bold;
-		    border-radius: 6px;
-		    cursor: pointer;
-		}
-		.detail small:hover{
-			    background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
-			    color: white;
-			    border-color: cyan;
-		}
-		li h4{
-		    position: absolute;
-            left: 70%;
-		    font-size: 30px;
-		    color: #050505;
-		}
-		/* Add your styles here */
+.detail .icon{
+    width: 30%;
+    height: 55%;
+    padding: 20px 5px;
+}
+.icon span{
+    background: #00000030;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    margin: 0 0 20px 5px;
+    font-size: 20px;
+    color: white;
+}
+.icon span:hover{
+    background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
+    cursor: pointer;
+}
+.detail > strong{
+    display: inherit;
+    margin: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #555;
+}
+.detail > span{
+    display: inherit;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 26;
+    padding: 0 20px;
+    width: 80%;
+}
+.detail small{
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.detail small:hover{
+        background: linear-gradient(45deg, hsl(208, 97%, 12%), hsl(214, 56%, 58%));;
+        color: white;
+        border-color: cyan;
+}
+li h4{
+    position: absolute;
+    left: 70%;
+    font-size: 30px;
+    color: #050505;
+}
 
 .items li {
     position: relative;
 }
 #secondary-header h2 {
-    margin-left: 20px; /* Adjust the value as needed */
+    margin-left: 20px; 
 }
-
 
 .items li .detail {
     position: absolute;
@@ -609,7 +595,6 @@ footer{
     border-top-left-radius: 30% ;
     opacity: 0.97;
     padding-top: 30px;
-    /*margin: 0 50px;*/
 
 }
 .footer{
@@ -617,7 +602,6 @@ footer{
     border-top-right-radius: 30% ;
     border-top-left-radius: 30% ;
     padding-top: 25px;;
-    /*margin: 0 50px;*/
 
 }
 .footer-col{

@@ -1,3 +1,7 @@
+#restaurants{
+  background-color: #e99815;
+  color: white;
+}
 .popup {
     display: none;
     color: #1e2021;
@@ -23,6 +27,22 @@ header{
   body{
     background-color: #fff;
   }
+
+
+
+
+
+
+
+ .dropbtn .menu {
+  margin: 0px 0;
+ }
+
+
+
+
+
+
 
   .myInfo{
     float: left ;
@@ -213,7 +233,7 @@ list-style-type: disc;
   top:0;
   left: 0;
   color: black;
-  height: 800px;
+  height: 830px;
 }
 .buffalo-logo-img img , .des-logo-img  img ,.caf-logo-img  img{
   position:absolute;
@@ -237,7 +257,7 @@ list-style-type: disc;
   border: solid #1e2021;
   top:0;
   right:0;
-  height: 800px;
+  height: 830px;
   margin: 2px;
 }
 .general-food {

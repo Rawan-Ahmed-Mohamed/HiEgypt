@@ -7,7 +7,7 @@
     <!-- Boxicons for the icons used -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
    
-    <title>Theme Two</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../CSS FILES_2/style.css" />
     <link rel="stylesheet" href="../CSS FILES_2/registration.css" />
 
@@ -125,8 +125,17 @@
       </div>
     </nav>
     <main class="THE-BODY-CONTENT">
-        <!-- the main content -->
-        
+        <form action="#" method="post" id="registrationForm">
+    <h2>Login</h2><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+    
+    <input type="submit" value="Login" id="registerButton">
+</form>
+      
     </main>
 
     <footer>
