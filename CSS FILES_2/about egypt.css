@@ -114,11 +114,11 @@ nav ul li a:hover {
 
 
 
+/*  table  */
 #places-table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-row th {
@@ -126,20 +126,24 @@ nav ul li a:hover {
     text-align: left;
     border-bottom: 1px solid #ddd;
     background-color: #BC6C25;
+    color: white;
 }
 
-.ancient-egypt,
-.islamic-egypt,
-.modern-egypt {
-    background-color: #f9f9f9;
-}
 
-.ancient-egypt td,
-.islamic-egypt td,
-.modern-egypt td {
+
+td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #283618;
+    border-bottom: 1px solid #283618; 
+    background-color: #f9f9f9;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    #places-table {
+        width: 100%; 
+    }
 }
 
 

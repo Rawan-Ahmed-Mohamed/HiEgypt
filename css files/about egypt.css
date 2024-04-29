@@ -83,44 +83,48 @@ nav ul li a:hover {
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #e99815;
+    background-color: #a8350b;
     transition: background-color 0.3s ease;
 }
 .back-to-home a:hover {
-    background-color: #8d5e13;
+    background-color: #4d1a07;
 }
 
 
 
 
-
+/*  table  */
 #places-table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-row th {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000000;
     background-color: #e99815;
+    color: rgb(0, 0, 0);
 }
 
-.ancient-egypt,
-.islamic-egypt,
-.modern-egypt {
-    background-color: #f9f9f9;
-}
 
-.ancient-egypt td,
-.islamic-egypt td,
-.modern-egypt td {
+
+td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #2a4851;
+    border-bottom: 1px solid #2a4851; 
+    background-color: #f9f9f9;
+
 }
+
+
+@media screen and (max-width: 767px) {
+    #places-table {
+        width: 100%; 
+    }
+}
+
 
 iframe {
     border-radius: 3%;
