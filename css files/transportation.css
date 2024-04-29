@@ -55,7 +55,7 @@ background-attachment: fixed;
     font-weight: bold;
     
     }
-    #Bus{
+    .Bus{
 
         background-color: rgb(42, 72, 81,0.8);
         margin-left: 50px;
