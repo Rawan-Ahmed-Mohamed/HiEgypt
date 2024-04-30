@@ -24,34 +24,70 @@ window.onload = function() {
   }
       });
   //======================================
-  function validateSearch() {
-    var searchInput = document.getElementById("searchInput").value.trim();
-    if (searchInput === "") {
-      document.getElementById("errorMessage").textContent = "Please enter a search query.";
-      return false; 
-  } else {
-      if (searchInput.toLowerCase() === 'buffalo'||searchInput.toLowerCase() === 'food') {
-          window.location.href = 'restaurants.html#buffalo';
-          return false; 
-      }
-      if (searchInput.toLowerCase() === 'Desserts'||searchInput.toLowerCase() === 'dessrt') {
-          window.location.href = 'restaurants.html#Desserts'; 
-          return false;
-      }
-      if (searchInput.toLowerCase() === 'special-dish'||searchInput.toLowerCase()==='special dish') {
-        window.location.href = 'restaurants.html#special-dish'; 
-        return false; 
+  let availablekeywords1 = [
+    'food',
+    'burger',
+    'juice',
+    'buffalo',
+    'koshari',
+    'grilled chicken',
+    'drinks',
+    'desserts',
+    'ice cream',
+    'qshtota',
+    'caffee',
+    'caf',
+    'desserts',
+  ];
+  
+  const resultbox = document.querySelector(".result-box");
+  const inputbox = document.getElementById("searchInput");
+  
+  inputbox.onkeyup = function() {
+    let result=[];
+    let input=inputbox.value;
+    if(input.length){
+        result=availablekeywords1.filter((keyword)=>{
+            return   keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.log(result);
     }
-    if(searchInput.toLowerCase() === 'drinks'||searchInput.toLowerCase()==='coffee') {
-      window.location.href = 'restaurants.html#CAFE'; 
-      return false; }
-      else{
-          document.getElementById("searchInput").style = "color:red;";
-          return false;
-      }
+    
+    display(result);
+    if(!result.length)
+    {
+        resultbox.innerHTML='';
+    }
+  };
+  
+  function display(result){
+    const content = result.map((list)=>{
+        return "<li onclick=selectinput(this)>"+list+"</li>";
+    });
+    resultbox.innerHTML="<ul>"+ content.join('') +"</ul>";
+}
 
   
-        document.getElementById("errorMessage").textContent = "";
-        return true; 
+function selectinput(list){
+  inputbox.value=list.innerHTML;
+  resultbox.innerHTML='';
+}
+
+function goButton()
+{
+    let search =inputbox.value.toLowerCase() ; 
+    if(search.includes('food')||search.includes('buffalo')){
+      window.location.href = 'restaurants.html#buffalo';
     }
+   else if(search.includes('drink')||search.includes('caf')||search.includes('caffee')||search.includes('juice')){
+
+    window.location.href = 'restaurants.html#CAFE'; 
+  }
+  else if(search.includes('grilled chicken')||search.includes('koshari')){
+    window.location.href = 'restaurants.html#special-dish'; 
+  }
+    else if(search.includes('ice cream')||search.includes('qshtota')||search.includes('desserts')){
+      window.location.href = 'restaurants.html#Desserts'; 
+
+}
 }
