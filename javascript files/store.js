@@ -42,71 +42,72 @@ function scrollToLatestProducts() {
         });
 
 
-       function validateForm() {
-    var firstName = document.getElementById("firstName").value.trim();
-    var lastName = document.getElementById("lastName").value.trim();
-    var address = document.getElementById("address").value.trim();
-    var phone = document.getElementById("phone").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var paymentMethod = document.getElementById("paymentMethod").value;
-
-    if (firstName === "" || lastName === "" || address === "" || phone === "" || email === "" || paymentMethod === "") {
-        alert("Please fill in all fields.");
-        return false; 
-    }
-
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
-        return false; 
-    }
-
-    var phonePattern = /^\d{10}$/;
-    if (!phonePattern.test(phone)) {
-        alert("Please enter a valid 10-digit phone number.");
-        return false; 
-    }
-}
-
-function validateForm() {
-    var firstName = document.getElementById("firstName").value.trim();
-    var lastName = document.getElementById("lastName").value.trim();
-    var address = document.getElementById("address").value.trim();
-    var phone = document.getElementById("phone").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var paymentMethod = document.getElementById("paymentMethod").value;
-
-    if (firstName === "" || lastName === "" || address === "" || phone === "" || email === "" || paymentMethod === "") {
-        alert("Please fill in all fields.");
-        return false; 
-    }
-
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
-        return false; 
-    }
-
-    var phonePattern = /^\d{10}$/;
-    if (!phonePattern.test(phone)) {
-        alert("Please enter a valid 10-digit phone number.");
-        return false; 
-    }
-
-    var orderDetails = {
-        firstName: firstName,
-        lastName: lastName,
-        address: address,
-        phone: phone,
-        email: email,
-        paymentMethod: paymentMethod
-    };
-
-    localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
-
-    alert("Order submitted successfully!");
-    
-    document.getElementById("orderForm").reset();
-
-    return true;
-}
+        function validateForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var address = document.getElementById("address").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var paymentMethod = document.getElementById("paymentMethod").value;
+        
+            if (firstName === "" || lastName === "" || address === "" || phone === "" || email === "" || paymentMethod === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+        
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+        
+            if (!/\S+@\S+\.\S+/.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+        
+            return true;
+        }
+        
+        function saveFormData() {
+            var formData = {
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                address: document.getElementById("address").value,
+                phone: document.getElementById("phone").value,
+                email: document.getElementById("email").value,
+                paymentMethod: document.getElementById("paymentMethod").value
+            };
+        
+            var formDataJson = JSON.stringify(formData);
+        
+            localStorage.setItem("formData", formDataJson);
+        }
+        
+        document.getElementById("orderForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (validateForm()) {
+                saveFormData();
+                alert("Form submitted successfully!");
+                closeForm(); 
+            }
+        });
+        
+        function loadFormData() {
+            var formDataJson = localStorage.getItem("formData");
+            if (formDataJson) {
+                var formData = JSON.parse(formDataJson);
+                document.getElementById("firstName").value = formData.firstName;
+                document.getElementById("lastName").value = formData.lastName;
+                document.getElementById("address").value = formData.address;
+                document.getElementById("phone").value = formData.phone;
+                document.getElementById("email").value = formData.email;
+                document.getElementById("paymentMethod").value = formData.paymentMethod;
+            }
+        }
+        
+        window.onload = loadFormData;
+        
+        function closeForm() {
+            var buyForm = document.getElementById("buyForm");
+            buyForm.style.display = "none";
+        }
