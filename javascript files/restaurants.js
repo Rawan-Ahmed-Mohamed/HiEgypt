@@ -37,6 +37,7 @@ window.onload = function() {
     'qshtota',
     'caffee',
     'caf',
+      'special dish',
   ];
   
   const resultbox = document.querySelector(".result-box");
@@ -82,7 +83,7 @@ function goButton()
 
     window.location.href = 'restaurants.html#CAFE'; 
   }
-  else if(search.includes('grilled chicken')||search.includes('koshari')){
+  else if(search.includes('grilled chicken')||search.includes('koshari')||search.includes('special dish')){
     window.location.href = 'restaurants.html#special-dish'; 
   }
     else if(search.includes('ice cream')||search.includes('qshtota')||search.includes('desserts')){
