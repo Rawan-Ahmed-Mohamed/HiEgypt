@@ -37,7 +37,6 @@ window.onload = function() {
     'qshtota',
     'caffee',
     'caf',
-    'desserts',
   ];
   
   const resultbox = document.querySelector(".result-box");
@@ -76,7 +75,7 @@ function selectinput(list){
 function goButton()
 {
     let search =inputbox.value.toLowerCase() ; 
-    if(search.includes('food')||search.includes('buffalo')){
+    if(search.includes('food')||search.includes('buffalo')||search.includes('burger')){
       window.location.href = 'restaurants.html#buffalo';
     }
    else if(search.includes('drink')||search.includes('caf')||search.includes('caffee')||search.includes('juice')){
