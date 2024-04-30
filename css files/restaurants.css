@@ -54,7 +54,7 @@ header{
    
    }
    .cover-main {
-    height: 400px;
+    height: 500px;
     background-image: url('../images/cover\ res.jpg') ;
     background-size: cover ; 
     background-position: center; 
