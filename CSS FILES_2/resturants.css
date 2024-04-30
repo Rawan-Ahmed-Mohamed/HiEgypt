@@ -209,7 +209,7 @@
   table {
     width: 100%;
     font-family: arial, sans-serif;
-    border-collapse: collapse; /* للتأكد من عدم وجود فجوات بين الخلايا */
+    border-collapse: collapse;
   }
   
 
@@ -223,7 +223,7 @@
   td:hover, th:hover {
     background-color: #bc6c25;
     font-weight: bold;
-    transform: scale(1.05) translateX(10px); /* تحريك إلى اليمين بوحدة بيكسل */
+    transform: scale(1.05) translateX(10px);
   }
   
     table img {
