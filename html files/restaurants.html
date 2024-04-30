@@ -108,12 +108,12 @@
     <div class="cover-main">
         <h1 class="welcome"><i> Welcome in restaurant section !</i></h1>
          <h2 class="gov"> <b>which section do you want ? </b></h2>
-       <div class="searchForm">
-        <form id="searchForm" onsubmit="return validateSearch()">
-            <input type="search" id="searchInput" required placeholder="Food / Desserts/ Special-dish / Drinks ">
-            <button type="submit">Search</button>
-            <p id="errorMessage" class="error-message"></p>
-        </form>
+             <div id="searchForm" class="searchForm">
+            <div class="internal">
+            <input type="search" id="searchInput" required placeholder="search here ">
+            <button type="submit"onclick="goButton()">Search</button>
+        </div>
+            <div class="result-box"></div>
         </div>
     </div>
     <div style="padding: 10px; margin: 2px; border: 2px solid #dda15d;">
