@@ -1,19 +1,18 @@
 window.onload = function() {
     var html = document.documentElement;
-    html.style.overflow = 'hidden'; // تعطيل التمرير لمنع التمرير أثناء ظهور الإعلان
+    html.style.overflow = 'hidden'; 
   
     var popup = document.querySelector('.popup');
     popup.style.display = 'block';
   
-    // إخفاء المسدج بعد فترة زمنية قصيرة باستخدام animate.css
     setTimeout(function() {
       popup.classList.remove('animate__fadeIn');
-      popup.classList.add('animate__fadeOut'); // استخدم animate__fadeOut للاختفاء
+      popup.classList.add('animate__fadeOut'); 
       setTimeout(function() {
         popup.style.display = 'none';
-        html.style.overflow = ''; // استعادة التمرير بعد اختفاء الإعلان
-      }, 1000); // زمن الانتقال في animate.css هو 1 ثانية
-    }, 1500); // زمن انتظار قبل بدء عملية الانتقال هو 2 ثوانٍ
+        html.style.overflow = ''; 
+      }, 1000);
+    }, 1500); 
   };
   
   
