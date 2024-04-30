@@ -125,17 +125,31 @@
       </div>
     </nav>
     <main class="THE-BODY-CONTENT">
-        <form action="#" method="post" id="registrationForm">
-    <h2>Login</h2><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="8" required>
-    
-    <input type="submit" value="Login" id="registerButton">
-</form>
-      
+   
+      <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="Signup()">Register</button>
+            </div>
+
+            <form id="login" class="input-group" onsubmit="return validateLogin()">
+                <input type="email" class="input-field" placeholder="Enter your Email" required id="login-email">
+                <input type="password" class="input-field" placeholder="Enter your password" required id="login-password">
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form id="Signup" class="input-group" onsubmit="return validateSignup()">
+                <input type="text" class="input-field" placeholder="Enter your Name" required>
+                <input type="email" class="input-field" placeholder="Enter your Email" required id="signup-email">
+                <input type="password" class="input-field" placeholder="Enter your password" required id="signup-password">
+                <button type="submit" class="submit-btn" id="submit">Sign up</button>
+            </form>
+
+            <div id="message"></div>
+        </div>
+    </div>
     </main>
 
     <footer>
@@ -164,7 +178,7 @@
 
     <!-- JavaScript -->
     <script src="../JAVA FILES_2/script.js"></script>
-    <script src="../JAVA FILES_2/registration.js"></script>
+    <script src="../javascript files/registration.js"></script>
 
 
 
