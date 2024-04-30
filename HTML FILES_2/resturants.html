@@ -149,13 +149,15 @@
   <div class="cover-main">
       <h1 class="welcome"><i> Welcome in restaurant section !</i></h1><br><br>
        <h3 class="gov"> <b>which section do you want ? </b></h3><br>
-     <div class="searchForm">
-      <form id="searchForm" onsubmit="return validateSearch()">
-          <input type="search" id="searchInput" required placeholder="FOOD / Desserts / Special-dish / Drinks ">
-          <button  class="button"type="submit">Search</button>
-          <p id="errorMessage" class="error-message"></p>
-      </form>
-      </div>
+     <div id="searchForm" class="searchForm">
+            <div class="internal">
+            <input type="search" id="searchInput" required placeholder="search here ">
+            <button type="submit"onclick="goButton()">Search</button>
+        </div>
+            <div class="result-box"></div>
+        </div>
+          
+        </div>
   </div>
   <div class="buffalo" id="buffalo">
       <div class="headerbuffalo"><h2> Buffalo Burger </h2></div>
