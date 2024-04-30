@@ -80,18 +80,18 @@ function selectinput(list){
 function goButton()
 {
     let search =inputbox.value.toLowerCase() ; 
-    if(search.includes('food')||search.includes('buffalo')){
-      window.location.href = 'restuarants.html#buffalo';
+    if(search.includes('food')||search.includes('buffalo')||search.includes('burger')){
+      window.location.href = 'resturants.html#buffalo';
     }
    else if(search.includes('drink')||search.includes('caf')||search.includes('caffee')||search.includes('juice')){
 
-    window.location.href = 'restuarants.html#CAFE'; 
+    window.location.href = 'resturants.html#CAFE'; 
   }
   else if(search.includes('grilled chicken')||search.includes('koshari')){
-    window.location.href = 'restuarants.html#special-dish'; 
+    window.location.href = 'resturants.html#special-dish'; 
   }
     else if(search.includes('ice cream')||search.includes('qshtota')||search.includes('desserts')){
-      window.location.href = 'restuarants.html#Desserts'; 
+      window.location.href = 'resturants.html#Desserts'; 
 
 }
 }
