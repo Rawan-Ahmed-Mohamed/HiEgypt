@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
     star.addEventListener('click', function() {
       const rating = this.value;
       document.getElementById('result').innerText = `You rated this ${rating} stars.`;
+      localStorage.setItem('rated', rating); 
     }); 
   });
 
   document.getElementById('submitBtn').addEventListener('click', function() {
     var rating = document.querySelector('input[name="rating"]:checked');
     var feedbackText = document.getElementById("feedbackText").value.trim();
-
+    var rate = rating ? rating.value : null; 
+    localStorage.setItem('rated', rate);
     localStorage.setItem('feedback', feedbackText);
 
     if (!rating) {
