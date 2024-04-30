@@ -75,40 +75,88 @@ header{
     display:flex;
     justify-content: space-around;
   }
-  .searchForm input {
-    width: 350px;
-    height: 40px;
-    border-radius: 25px;
-    margin-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    background-color: #fff;
-    color: black;
-    font-size:large;
-  }
-  ::placeholder{
-    font-weight: 600;
-  }
-  
-  .searchForm button {
-    margin-left: -10px;
-    height: 40px;
-    width: 100px;
-    border-radius: 25px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    transition: 0.5s;
-    color: #1e2021;
+
+
+
+
+
+
+
+
+
+
+  .searchForm{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+.searchForm input {
+  width: 350px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  color: black;
+  font-size:large;
+}
+::placeholder{
+  font-weight: 600;
+}
+
+.searchForm button {
+  margin-left: -10px;
+
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: .5s;
+  color: #1e2021;
   font-size: large;
-  background-color:rgb(233, 134, 21, .7);
-  }
-  
-  .searchForm button:hover{
-    transform: scale(1.05);
+  background-color:rgb(233, 134, 21, .7); 
+}
+
+.searchForm button:hover{
+  transform: scale(1.05);
+  background-color: #2a4851;
+  color: #fff;
+
+}
+.result-box{
+  z-index: 1000;
+    width: 450px;
+    background-color:#ddd ;
+    border-radius: 20px;
+}
+.result-box ul{
+  list-style-type: none;
+  direction: none;
+  margin-top: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.result-box ul li{
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 400;
+    color: #1e2021;
+}
+.result-box ul li:hover{
+    cursor: pointer;
+    
     background-color: #2a4851;
-    color: #fff;
-  
-  }
+}
+
+
+
+
+
   /*--------------------------------*/
   .button {
   font-weight: bold;
