@@ -256,19 +256,16 @@ header ul li.active a {
     list-style: none;
     width: calc(23.4% - 10px); 
     height: 400px;
-    /* Remove the transition property from here */
     background: whitesmoke;
     border-radius: 20px;
     position: relative;
     margin-right: 20px; 
 }
 
-/* Add the transition property for elements not being hovered */
 .product-field ul li:not(:hover) {
-    transition: 0.5s all; /* Apply transition only to elements not being hovered */
+    transition: 0.5s all; 
 }
 
-/* Ensure this rule comes after the .product-field ul li rule */
 .product-field ul li:last-child {
     margin-right: 0; 
 }
