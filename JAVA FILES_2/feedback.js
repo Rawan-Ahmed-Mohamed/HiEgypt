@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var rating = document.querySelector('input[name="rating"]:checked');
     var feedbackText = document.getElementById("feedbackText").value.trim();
 
-    // Set feedbackText to local storage
     localStorage.setItem('feedback', feedbackText);
 
     if (!rating) {
