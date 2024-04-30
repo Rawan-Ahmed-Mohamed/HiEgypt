@@ -97,12 +97,14 @@ header{
     border-radius: 25px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    transition: 0;
+    transition: 0.5s;
     color: #1e2021;
+  font-size: large;
+  background-color:rgb(233, 134, 21, .7);
   }
   
   .searchForm button:hover{
-    transform: scale(1);
+    transform: scale(1.05);
     background-color: #2a4851;
     color: #fff;
   
