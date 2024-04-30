@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ar<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -7,7 +7,7 @@
     <!-- Boxicons for the icons used -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
    
-    <title>Theme Two</title>
+    <title>Restaurants</title>
     <link rel="stylesheet" href="../CSS FILES_2/style.css" />
     <link rel="stylesheet" href="../CSS FILES_2/resturants.css" />
 
@@ -148,15 +148,17 @@
 
   <div class="cover-main">
       <h1 class="welcome"><i> Welcome in restaurant section !</i></h1><br><br>
-       <h3 class="gov"> <b>which section do you want ? </b></h3><br>
-     <div class="searchForm">
-      <form id="searchForm" onsubmit="return validateSearch()">
-          <input type="search" id="searchInput" required placeholder="FOOD / Desserts / Special-dish / Drinks ">
-          <button  class="button"type="submit">Search</button>
-          <p id="errorMessage" class="error-message"></p>
-      </form>
-      </div>
-  </div>
+       <h3 class="gov"> <b>Search about what you want </b></h3><br>
+     <div id="searchForm" class="searchForm">
+            <div class="internal">
+            <input type="search" id="searchInput" required placeholder="search here ">
+            <button type="submit"onclick="goButton()">Search</button>
+        </div>
+            <div class="result-box"></div>
+        </div>
+          
+        </div>
+ 
   <div class="buffalo" id="buffalo">
       <div class="headerbuffalo"><h2> Buffalo Burger </h2></div>
       <h3 > OUR STORY</h3>
@@ -248,7 +250,7 @@
           <div class="general-food">
               <div class="food1">
                   <img src="../images/7alaw (3).png" alt="Qunbla dessert">
-                  <p><b style="font-size: larger;"> Qunbla with konafa</b></p>
+                  <p><b style="font-size: larger;"> qshtota with konafa</b></p>
                   <p><b style="font-size: large;">price:100$ <del>120$</del></b><br>
                     <button class="button" id="click" onclick="bookfun() , style='background-color:#bc6c25'">ORDER NOW</button>
                   </p>
@@ -256,7 +258,7 @@
               </div>
               <div class="food1">
                   <img src="../images/7alaw (2).png" alt="Qunbla dessert">
-                  <p><b style="font-size: larger;"> Qunbla with slice of mango</b></p>
+                  <p><b style="font-size: larger;"> ice cream with slice of mango</b></p>
                   <p><b style="font-size: large;">price:50$ <del>60$</del></b><br>
                    <button  class="button" id="click" onclick="bookfun() ,  style='background-color:#bc6c25'">ORDER NOW</button>
                   </p>
@@ -264,7 +266,7 @@
               </div>
               <div class="food1">
                   <img src="../images/7alaw (1).png" alt="Qunbla dessert">
-                  <p><b style="font-size: larger;"> Qunbla with kerama</b></p>
+                  <p><b style="font-size: larger;"> ice cream with kerama</b></p>
                   <p><b style="font-size: large;">price:70$ <del>80$</del></b><br>
                    <button class="button" id="click" onclick="bookfun() ,  style='background-color:#bc6c25'">ORDER NOW</button>
                   </p>

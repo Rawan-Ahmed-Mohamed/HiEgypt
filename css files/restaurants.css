@@ -6,16 +6,16 @@
     display: none;
     color: #1e2021;
     position: fixed;
-    top: 0; /* تمديد الصندوق ليبدأ من أعلى الصفحة */
-    left: 0; /* تمديد الصندوق ليبدأ من اليسار */
-    width: 100%; /* جعل عرض الصندوق يملأ الشاشة بالكامل */
-    height: 100%; /* جعل ارتفاع الصندوق يملأ الشاشة بالكامل */
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%; 
     background-color: #fff;
     padding: 40px;
-    border: none; /* إزالة الحدود */
+    border: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: auto; /* إضافة شريط تمرير للصندوق في حال كان أكبر من الشاشة */
-    font-size: 50px; /* تكبير حجم النص */
+    overflow: auto;
+    font-size: 50px; 
     text-align: center;
     z-index: 9999;
   }
@@ -56,12 +56,12 @@ header{
    .cover-main {
     height: 250px;
     background-image: url('../images/cover\ res.jpg') ;
-    background-size: cover ; /* لتغطية العنصر بالصورة */
-    background-position: center; /* لتوسيط الصورة */
-    color: white; /* لتغيير لون النص ليظهر بوضوح على الخلفية */
-    text-align: center; /* لتوسيط النص داخل العنصر */
+    background-size: cover ; 
+    background-position: center; 
+    color: white; 
+    text-align: center; 
     font-size: xx-large;
-    padding: 50px; /* لإضافة هامش داخلي حول النص */
+    padding: 50px;
   
   }
 
@@ -75,38 +75,88 @@ header{
     display:flex;
     justify-content: space-around;
   }
-  .searchForm input {
-    width: 350px;
-    height: 40px;
-    border-radius: 25px;
-    margin-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    background-color: #fff;
-    color: black;
-    font-size:large;
-  }
-  ::placeholder{
-    font-weight: 600;
-  }
-  
-  .searchForm button {
-    margin-left: -10px;
-    height: 40px;
-    width: 100px;
-    border-radius: 25px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    transition: 0;
+
+
+
+
+
+
+
+
+
+
+  .searchForm{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+.searchForm input {
+  width: 350px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  color: black;
+  font-size:large;
+}
+::placeholder{
+  font-weight: 600;
+}
+
+.searchForm button {
+  margin-left: -10px;
+
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: .5s;
+  color: #1e2021;
+  font-size: large;
+  background-color:rgb(233, 134, 21, .7); 
+}
+
+.searchForm button:hover{
+  transform: scale(1.05);
+  background-color: #2a4851;
+  color: #fff;
+
+}
+.result-box{
+  z-index: 1000;
+    width: 450px;
+    background-color:#ddd ;
+    border-radius: 20px;
+}
+.result-box ul{
+  list-style-type: none;
+  direction: none;
+  margin-top: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.result-box ul li{
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 400;
     color: #1e2021;
-  }
-  
-  .searchForm button:hover{
-    transform: scale(1);
+}
+.result-box ul li:hover{
+    cursor: pointer;
+    
     background-color: #2a4851;
-    color: #fff;
-  
-  }
+}
+
+
+
+
+
   /*--------------------------------*/
   .button {
   font-weight: bold;
@@ -139,20 +189,19 @@ header{
 }
 
 
-/* وسائط الاستجابة */
 @media only screen and (max-width: 768px) {
   button {
-    width: 100%; /* جعل الأزرار يمتلئون العرض بالكامل */
+    width: 100%;
   }
 
   a {
-    font-size: medium; /* تقليل حجم الروابط للأجهزة الصغيرة */
+    font-size: medium; 
   }
 }
 
 @media only screen and (max-width: 480px) {
   a {
-    font-size: small; /* تقليل حجم الروابط للأجهزة الصغيرة جدًا */
+    font-size: small; 
   }
 }
 
@@ -166,7 +215,7 @@ header{
   h2 {
     font-size: xx-large;
     transition: .75s;
-    margin-bottom: 10px; /* تباعد بين العنوان h2 وبقية العناصر */
+    margin-bottom: 10px; 
   }
    h2:hover{ 
     transform: scale(1.1);
@@ -264,7 +313,7 @@ list-style-type: disc;
 position: absolute;
 display: flex;
 flex-direction: column;
-align-items:center; /* لتوسيط العناصر أفقيًا */
+align-items:center; 
 }
 .food1:hover{
   background-color: #2a4851;
@@ -277,14 +326,14 @@ size: 50px;
 transition: .75s;
 border-radius: 10px;
 width: 25%;
-display: flex; /* يضمن عرض الصورة كبلوك بدلاً من إنلاين */
-margin: 0 auto 2px; /* توسيط الصورة داخل العنصر وإضافة تباعد بينها وبين النص */
+display: flex;
+margin: 0 auto 2px; 
 }
 .food1 img:hover{
 transform:scale(1.05);
 }
 .food1 p {
-text-align: center; /* توسيط النص داخل العنصر */
+text-align: center;
 }
 .menu .food1 p{
   font-size: large;
@@ -330,9 +379,9 @@ text-align: center; /* توسيط النص داخل العنصر */
   }
 
   .paragraph-container { 
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Align horizontally to center */
-    align-items: center; /* Align vertically to center */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
   }
   
   .buf-inner p, .des-inner p, .caf-inner p, .menu p {
@@ -347,7 +396,7 @@ margin:1px;
   font-size: large;
   width: 20%;
     padding: 5px;
-    border-radius: 5px; /* Adjust border-radius for smaller screens */
+    border-radius: 5px; 
 }
 .contact dd{
   margin: 0;
@@ -389,8 +438,8 @@ margin-left: 2px;
   font-size:small;
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox layout */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center; 
 }
 
 .special-dish img {
@@ -451,9 +500,9 @@ margin-left: 2px;
   }
 
   .paragraph-container { 
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Align horizontally to center */
-    align-items: center; /* Align vertically to center */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   
   .buf-inner p, .des-inner p, .caf-inner p, .menu p {
@@ -468,7 +517,7 @@ margin:1px;
   font-size: small;
   width: 10%;
     padding: 5px;
-    border-radius: 5px; /* Adjust border-radius for smaller screens */
+    border-radius: 5px; 
 }
 .contact dd{
   margin: 0;
@@ -511,8 +560,8 @@ margin:1px;
   font-size:x-small small;
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox layout */
-  align-items: center; /* Center items vertically */
+  display: flex; 
+  align-items: center; 
 }
 
 .special-dish img {

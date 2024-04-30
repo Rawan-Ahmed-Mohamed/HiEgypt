@@ -26,13 +26,13 @@ border-bottom-right-radius: 100%;
 }
 @keyframes changeBackground {
   0% ,100% {
-    background-color: #FEFAE0; /* اللون الأول */
+    background-color: #FEFAE0;
   }
   33.33% {
-    background-color: #DDA15E; /* اللون الثاني */
+    background-color: #DDA15E; 
   }
   66.66% {
-    background-color: #BC6C25; /* اللون الثالث */
+    background-color: #BC6C25;
   }
 }
 
@@ -139,27 +139,27 @@ border-bottom-right-radius: 100%;
     #thanks {
       display: none;
       font-size:x-large;
-      width: 100vw; /* Set the width equal to the viewport width */
-      text-align: center; /* Center the message horizontally */
-      background-color: #BC6C25; /* Add a background color */
-      padding: 20px 0; /* Add some padding for better visibility */
-      margin: 0; /* Remove any default margin */
-      position: fixed; /* Fixed positioning to make it always visible */
-      bottom: 0; /* Position it at the bottom */
-      left: 0; /* Align it to the left */
+      width: 100vw; 
+      text-align: center; 
+      background-color: #BC6C25; 
+      padding: 20px 0;
+      margin: 0; 
+      position: fixed; 
+      bottom: 0; 
+      left: 0;
     }
     
       .comment1,
       .comment2,
       .comment3 {
         margin: 5px 10px 5px 0;  
-        margin-bottom: 2px; /* Adjust the spacing between comments */
+        margin-bottom: 2px;
         border: #DDA15E solid;
         background-color: #fff;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
         font-size: large;
-        padding: 10px; /* Add padding to the comments for better spacing */
+        padding: 10px;
       }
       
       .comment1 img,
@@ -198,7 +198,7 @@ border-bottom-right-radius: 100%;
         margin-top: 0px;
       }
       .most-related {
-        margin-top: 20px; /* Adjust the margin for the "most related" section */
+        margin-top: 20px;
       }
       
 @media only screen and (max-width: 1200px) {

@@ -1,18 +1,18 @@
 .popup {
     display: none;
     position: fixed;
-    top: 50%; /* يوضع الصندوق في منتصف الشاشة عموديًا */
-    left: 50%; /* يوضع الصندوق في منتصف الشاشة أفقيًا */
-    transform: translate(-50%, -50%); /* يحرك الصندوق إلى الوسط */
-    width: 100%; /* جعل عرض الصندوق يملأ الشاشة بالكامل */
-    height: 100%; /* جعل ارتفاع الصندوق يملأ الشاشة بالكامل */
-    max-width: 100%; /* تحديد عرض أقصى للصندوق */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 100%; 
+    max-width: 100%; 
     background-color: #fff;
     padding: 150px;
-    border: none; /* إزالة الحدود */
+    border: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: auto; /* إضافة شريط تمرير للصندوق في حال كان أكبر من الشاشة */
-    font-size: 50px; /* تكبير حجم النص */
+    overflow: auto;
+    font-size: 50px; 
     text-align:-10px;
     z-index: 100;
 }
@@ -81,52 +81,94 @@
     height: 500px;
     margin: 0px;
     background-image: url('../images/cover\ res.jpg') ;
-    background-size: cover ; /* لتغطية العنصر بالصورة */
-    background-position: center; /* لتوسيط الصورة */
-    color: white; /* لتغيير لون النص ليظهر بوضوح على الخلفية */
-    text-align: center; /* لتوسيط النص داخل العنصر */
+    background-size: cover ;
+    background-position: center; 
+    color: white; 
+    text-align: center; 
     font-size: xx-large;
     top:-25px;
     font-weight: bold;
-    padding:100px; /* لإضافة هامش داخلي حول النص */
+    padding:100px; 
   
   }
-  .searchForm input {
-    width: 350px;
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    background-color: #dda15e;
-    color: black;
-    font-size:large;
-  }
-  
-  .searchForm button {
-    margin-left: -10px;
-    height: 50px;
-    left: 2px;
-    top: 2px;
+
+
+
+
+
+
+
+
+.searchForm{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+.searchForm input {
+  width: 350px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  color: black;
+  font-size:large;
+}
+::placeholder{
+  font-weight: 600;
+}
+
+.searchForm button {
+  margin-left: -10px;
+
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: .5s;
+  color: #1e2021;
+  font-size: large;
+  background-color:#DDA15E; 
+}
+
+.searchForm button:hover{
+  transform: scale(1.05);
+  background-color: #bc6c25;
+  color: #fff;
+
+}
+.result-box{
+  z-index: 1000;
+    width: 450px;
+    background-color:#DDA15E ;
+    border-radius: 20px;
+}
+.result-box ul{
+  list-style-type: none;
+  direction: none;
+  margin-top: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.result-box ul li{
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 400;
+    color: #FEFAE0;
+}
+.result-box ul li:hover{
+    cursor: pointer;
     
-    width: 120px;
-    border-radius: 25px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    transition: 0;
-    font-size:large ;
-    color: #283618;
-  }
-  
-  ::placeholder{
-    font-weight: 600;
-  }
-  .searchForm button:hover{
-    transform: scale(1);
     background-color: #bc6c25;
-    color: #fff;
-  
-  }
+}
+
+
+
   /*--------------------------------*/
   .buffalo ,.Desserts , .CAFE , .special-dish {
     display: flex;
@@ -144,13 +186,13 @@
     color: #283618;
     margin-bottom: 20px;
     transition: .75s;
-    margin-bottom: 10px; /* تباعد بين العنوان h2 وبقية العناصر */
+    margin-bottom: 10px; 
   }
   .buffalo h2:hover , .CAFE h2:hover , .Desserts h2:hover ,.special-dish h2:hover{ 
     transform: scale(1.1);
   }
   .buffalo h3 ,.CAFE h3 , .Desserts h3  , .special-dish h3{
-    margin-top: 10px; /* تباعد بين العنوان h3 وبقية العناصر */
+    margin-top: 10px;
     text-decoration: underline;
     transition: .75s;
     color: #283618;
@@ -160,9 +202,9 @@
   }
   
   .buffalo-logo-img , .des-logo-img , .caf-logo-img  {
-    width: 100px; /* تحديد العرض الخاص بالصورة */
-    height: auto; /* تحديد الارتفاع بناءً على العرض */
-    margin-top: 10px; /* تباعد بين الصورة وبقية العناصر */
+    width: 100px;
+    height: auto; 
+    margin-top: 10px;
   }
   .buf-inner , .des-inner , .caf-inner{
     display: flex;
@@ -178,13 +220,13 @@
   .general-food {
   display: flex;
   flex-direction: row;
-  align-items:center; /* لتوسيط العناصر أفقيًا */
+  align-items:center; 
   }
   
   .food1 {
   margin: 10px;
   margin-bottom: 5px;
-   /* تباعد بين العناصر */
+
   }
   
   .food1 img {
@@ -194,25 +236,25 @@
   transition: 0.75s;
   border-radius: 10px;
   width: 50%;
-  display: flex; /* يضمن عرض الصورة كبلوك بدلاً من إنلاين */
-  margin: 0 auto 2px; /* توسيط الصورة داخل العنصر وإضافة تباعد بينها وبين النص */
+  display: flex;
+  margin: 0 auto 2px; 
   }
   .food1 img:hover{
   transform:scale(1.05);
   }
   .food1 p {
-  text-align: center; /* توسيط النص داخل العنصر */
+  text-align: center; 
   }
   .special-dish1{
   border: 2px solid #dda15e; 
-  }/* الجدول بشكل عام */
+  }
   table {
     width: 100%;
     font-family: arial, sans-serif;
-    border-collapse: collapse; /* للتأكد من عدم وجود فجوات بين الخلايا */
+    border-collapse: collapse;
   }
   
-  /* الخلايا والعناوين */
+
   td, th {
     border: 1px solid #dda15e;
     padding: 12px;
@@ -220,16 +262,13 @@
     transition: background-color 0.3s, transform 0.3s;
   }
   
-  /* تغيير لون الخلفية وتكبير الحجم عند التحويم */
   td:hover, th:hover {
     background-color: #bc6c25;
     font-weight: bold;
-    transform: scale(1.05) translateX(10px); /* تحريك إلى اليمين بوحدة بيكسل */
+    transform: scale(1.05) translateX(10px);
   }
   
-  
-  /* صور الجدول */
-  table img {
+    table img {
     max-width: 100%;
     height: auto;
     padding: 10px;
@@ -238,7 +277,6 @@
     transition: transform 0.3s;
   }
   
-  /* تكبير حجم الصورة عند التحويم */
   table img:hover {
     transform: scale(1.1);
   }
@@ -249,9 +287,8 @@
 color: #bc6c25;
 background-color: #dda15e;
   }
-  /* وسائط الاستجابة */
+
   @media only screen and (max-width: 768px) {
-    /* قم بتعديل التباعد وحجم الصور للأجهزة الصغيرة */
     td, th {
       padding: 10px;
     }
@@ -275,7 +312,6 @@ margin-left: -20px;
   }
   
   @media only screen and (max-width: 480px) {
-    /* قم بتعديل التباعد وحجم الصور للأجهزة الصغيرة جداً */
     td, th {
       padding: 8px;
     }

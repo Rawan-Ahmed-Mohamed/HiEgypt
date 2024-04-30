@@ -252,16 +252,19 @@ header ul li.active a {
     display: flex;
     flex-wrap: wrap;
 }
-
 .product-field ul li {
     list-style: none;
     width: calc(23.4% - 10px); 
     height: 400px;
-    transition: 0.5s all;
     background: whitesmoke;
     border-radius: 20px;
     position: relative;
     margin-right: 20px; 
+}
+
+.product-field ul li:not(:hover) {
+    transition: 0.5s all; 
+}
 
 .product-field ul li:last-child {
     margin-right: 0; 
@@ -393,5 +396,4 @@ header#header h2 {
 
 .footer{
     margin-left: 120px;
-}
 }
